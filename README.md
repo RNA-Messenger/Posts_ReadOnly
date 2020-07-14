@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# A little Reddit Reader by ANR
+ 
+This is a simple reddit client to browse top posts, done with a modern React stack using hooks for data fetching. I decided not to use any extra libraries to show my abilities as vanilla as possible.
 
-## Available Scripts
+## The Steps I took
+ 
+- I rendered a list of posts using the WithLoader component. It receives a promise and by using hooks I pass the data to the PostsList component in it's props.
+- I created different cards for every layout: image, link.
+- Every link opens in a new tab in a secure way.
+- I implemented a layout using modern SCSS techniques with variables and mixins.
+- One media and width restrictions to make the design as responsible as possible.
+- A tiny animation for the loader for a nice 'look and feel'.
+ 
+## TODO
+ 
+- A video component, by using the marker "post-hint" I could differentiate reddit-videos from youtube videos and check what other source of videos existed. These markers are not mandatory, so I would've needed a second validation.
+- A tiny redux sample.
+- Get read off the relative paths.
+- Maybe add a dark-mode theme.
 
-In the project directory, you can run:
+## Running the app
 
-### `yarn start`
+First install dependencies
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npm i
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+To run development server
 
-### `yarn test`
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To build for production
 
-### `yarn build`
+```
+npm run build
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Tools used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- react
+- js
+- scss
